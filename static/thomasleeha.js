@@ -27,11 +27,14 @@ function loadFilesList() {
 		.then(data => {
 			// Do something with your data
 			//console.log(data);
+			/*
 			$(data).find("td > a").each(function () {
 				if (openFile($(this).attr("href"))) {
 					fileNames.push($(this).attr("href"));
 				}
 			});
+			*/
+			fileNames = JSON.parse(data);
 			console.log(fileNames);
 
 			function openFile(file) {
