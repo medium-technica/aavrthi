@@ -22,7 +22,7 @@ function loadFilesList() {
 		}
 	});
 	*/
-	fetch("https://abraham198305.github.io/aavarthi/res/doc/titles.html")
+	fetch("https://abraham198305.github.io/aavarthi/static/res/doc/titles.html")
 		.then(response => response.text())
 		.then(data => {
 			// Do something with your data
