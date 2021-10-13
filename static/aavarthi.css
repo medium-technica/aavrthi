@@ -70,7 +70,7 @@ figsource {
 
 .b-box_with_grand_text {
 	font-size: 12pt;
-	text-align: justify;
+	text-align: centre;
 	padding: 1rem;
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
