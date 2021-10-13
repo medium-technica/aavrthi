@@ -1,32 +1,10 @@
 @import url('https://smc.org.in/fonts/rachana.css');
-/* Rachana */
-
-@font-face {
-    font-family: Rachana-Regular;
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://abraham198305.github.io/aavarthi/static/Rachana-Regular.eot?v=6.1);
-    /* IE9 Compat Modes */
-    src: url(https://abraham198305.github.io/aavarthi/static/Rachana-Regular.eot?v=6.1#iefix) format('embedded-opentype'), /* IE6-IE8 */
-    url(https://abraham198305.github.io/aavarthi/static/Rachana-Regular.woff2?v=6.1) format('woff2'), url(https://smc.org.in/fonts/Rachana.woff?v=6.1) format('woff'), url(https://smc.org.in/fonts/Rachana.ttf?v=6.1) format('truetype');
-    unicode-range: U+0D01-0D7F;
-}
-
-/* Rachana Bold*/
-
-@font-face {
-    font-family: Rachana-Bold;
-    font-style: bold;
-    font-weight: 700;
-    src: url(https://abraham198305.github.io/aavarthi/static/Rachana-Bold.eot?v=6.1);
-    /* IE9 Compat Modes */
-    src: url(https://abraham198305.github.io/aavarthi/static/Rachana-Bold.eot?v=6.1#iefix) format('embedded-opentype'), /* IE6-IE8 */
-    url(https://abraham198305.github.io/aavarthi/static/Rachana-Bold.woff2?v=6.1) format('woff2'), url(https://smc.org.in/fonts/Rachana-Bold.woff?v=6.1) format('woff'), url(https://smc.org.in/fonts/Rachana-Bold.ttf?v=6.1) format('truetype');
-    unicode-range: U+0D01-0D7F;
-}
-
 figure {
     margin: auto;
+}
+
+body {
+    background-color: wheat;
 }
 
 img {
