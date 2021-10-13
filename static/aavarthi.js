@@ -1,16 +1,15 @@
-// this possible write on clean JS
-
 $(fnInit())
 
 function fnInit() {
 	console.log("init");
-	loadMenuList();
-	loadFile("തോമാശ്ലീഹ");
+	//loadMenuList();
+	//loadFile("തോമാശ്ലീഹ");
 	loadFilesList();
 }
 
 function loadMenuList() {
-	$("#ListMenu").append("<b>Appended text</b>");
+	console.log("ladMenuList");
+	$('#echo-file').html("<b>Appended text</b>");
 }
 
 function loadFilesList() {
@@ -26,11 +25,11 @@ function loadFilesList() {
 		}
 	});
 	*/
-	fetch("https://abraham198305.github.io/aavarthi/static/res/doc/titles.json")
-		.then(response => response.text())
+	fetch("https://abraham198305.github.io/aavarthi/static/res/doc/text.json")
+		.then(response => response.json)
 		.then(data => {
-			fileNames = JSON.parse(data);
-			console.log(fileNames);
+			articles = JSON.parse(data);
+			console.log(articles);
 		});
 }
 
