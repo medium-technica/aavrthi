@@ -4,8 +4,13 @@ $(fnInit())
 
 function fnInit() {
 	console.log("init");
+	loadMenuList();
 	loadFile("തോമാശ്ലീഹ");
 	loadFilesList();
+}
+
+function loadMenuList() {
+	$("#ListMenu").append("<b>Appended text</b>");
 }
 
 function loadFilesList() {
