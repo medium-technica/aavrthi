@@ -26,7 +26,7 @@ function loadFilesList() {
 	});
 	*/
 	fetch("https://abraham198305.github.io/aavarthi/static/res/doc/text.json")
-		.then(response => response.json)
+		.then(response => response.json())
 		.then(data => {
 			articles = JSON.parse(data);
 			console.log(articles);
