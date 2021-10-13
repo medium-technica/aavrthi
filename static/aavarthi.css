@@ -55,10 +55,6 @@ figsource {
     text-align: center;
 }
 
-body {
-    background-image: url('res/img/watermark_dove.gif');
-}
-
 .demo-layout-waterfall .mdl-layout__drawer-button, .mdl-layout__header {
     background-color: transparent;
     color: rgb(13, 112, 158);
@@ -75,7 +71,6 @@ body {
 }
 
 .mdl-layout__drawer, .mdl-menu {
-    background-image: url('res/img/watermark_dove.gif');
     color: rgb(13, 112, 158);
 }
 
