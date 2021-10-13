@@ -14,12 +14,12 @@
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
- <link href="https://abraham198305.github.io/aavarthi/static/thomasleeha.css" rel="stylesheet" type="text/css">
- <script src="https://abraham198305.github.io/aavarthi/static/thomasleeha.js"></script>
+ <link href="https://abraham198305.github.io/aavarthi/static/aavarthi.css" rel="stylesheet" type="text/css">
+ <script src="https://abraham198305.github.io/aavarthi/static/aavarthi.js"></script>
 
 </head>
 
-<body style="background-image: url('static/res/img/watermark_dove.gif');">
+<body>
  <!-- List with avatar and controls -->
 
  <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -35,7 +35,7 @@
   </header>
   <div class="mdl-layout__drawer">
    <span class="menu-title" style="padding: 30px ">ലേഖനങ്ങൾ</span>
-   <nav class="mdl-navigation">
+   <nav id="ListMenu" class="mdl-navigation">
 
     <a id="article" onclick="loadFile('തോമാശ്ലീഹ')" class=" mdl-navigation__link ">
      <i class=" material-icons ">library_books</i>
@@ -57,7 +57,6 @@
   </div>
   <main class=" mdl-layout__content " style=" text-align: center; ">
    <div class=" page-content ">
-    <img src=" https://abraham198305.github.io/aavarthi/static/res/img/doubting_thoma_and_yeshua.jpg ">
     <div id="echo-file" class="b-box_with_grand_text"></div>
    </div>
   </main>
