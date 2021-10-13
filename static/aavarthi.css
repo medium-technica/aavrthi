@@ -72,6 +72,7 @@ figsource {
 	font-size: 12pt;
 	text-align: justify;
 	padding: 1rem;
+        hyphens: auto;
 }
 
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
