@@ -1,23 +1,45 @@
+@import url('https://smc.org.in/fonts/rachana.css');
+/* Rachana */
+
 @font-face {
-    font-family: fontRachana;
-    src: local('Rachana-Regular'), url(Rachana-Regular.woff2) format('woff2');
-  }
+    font-family: Rachana-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://abraham198305.github.io/aavarthi/static/Rachana-Regular.eot?v=6.1);
+    /* IE9 Compat Modes */
+    src: url(https://abraham198305.github.io/aavarthi/static/Rachana-Regular.eot?v=6.1#iefix) format('embedded-opentype'), /* IE6-IE8 */
+    url(https://abraham198305.github.io/aavarthi/static/Rachana-Regular.woff2?v=6.1) format('woff2'), url(https://smc.org.in/fonts/Rachana.woff?v=6.1) format('woff'), url(https://smc.org.in/fonts/Rachana.ttf?v=6.1) format('truetype');
+    unicode-range: U+0D01-0D7F;
+}
+
+/* Rachana Bold*/
+
+@font-face {
+    font-family: Rachana-Bold;
+    font-style: bold;
+    font-weight: 700;
+    src: url(https://abraham198305.github.io/aavarthi/static/Rachana-Bold.eot?v=6.1);
+    /* IE9 Compat Modes */
+    src: url(https://abraham198305.github.io/aavarthi/static/Rachana-Bold.eot?v=6.1#iefix) format('embedded-opentype'), /* IE6-IE8 */
+    url(https://abraham198305.github.io/aavarthi/static/Rachana-Bold.woff2?v=6.1) format('woff2'), url(https://smc.org.in/fonts/Rachana-Bold.woff?v=6.1) format('woff'), url(https://smc.org.in/fonts/Rachana-Bold.ttf?v=6.1) format('truetype');
+    unicode-range: U+0D01-0D7F;
+}
 
 figure {
     margin: auto;
 }
 
 img {
-    width:20%;
+    width: 20%;
     box-shadow: 0px 0px 10px #045;
-	border-radius: 70%;
-	margin-bottom: 30px;
+    border-radius: 70%;
+    margin-bottom: 30px;
 }
 
-h2 {
+h2, h3 {
     font-size: 20pt;
     color: rgb(5, 50, 50);
-    font-family: fontRachana;
+    font-family: Rachana-Bold;
     text-shadow: 0px 0px 10px #035;
 }
 
@@ -29,7 +51,7 @@ figcaption {
 }
 
 figsource {
-    font-size:8pt;
+    font-size: 8pt;
     text-align: center;
 }
 
@@ -37,20 +59,19 @@ body {
     background-image: url('res/img/watermark_dove.gif');
 }
 
-.demo-layout-waterfall .mdl-layout__drawer-button,
-.mdl-layout__header {
+.demo-layout-waterfall .mdl-layout__drawer-button, .mdl-layout__header {
     background-color: transparent;
     color: rgb(13, 112, 158);
 }
 
 .mdl-layout__drawer-button {
-	margin-left: 0px;
-	margin-top: 12px;
+    margin-left: 0px;
+    margin-top: 12px;
 }
 
 .mdl-layout__header-row {
-	margin: auto;
-	padding: 0;
+    margin: auto;
+    padding: 0;
 }
 
 .mdl-layout__drawer, .mdl-menu {
@@ -64,25 +85,25 @@ body {
 
 .mdl-layout-title {
     color: rgb(5, 50, 50);
-    font-family: fontRachana;
+    font-family: Rachana-Bold;
     text-shadow: 0px 0px 10px #035;
     font-size: 20pt;
+    padding-right: 15px;
 }
 
 .menu-title {
     color: rgb(5, 50, 50);
-    font-family: fontRachana;
+    font-family: Rachana-Bold;
     text-shadow: 0px 0px 10px #035;
     font-size: 16pt;
 }
 
-.b-box_with_grand_text {
+.b-box_with_grand_text, .mdl-navigation__link {
     color: rgb(5, 50, 50);
-    font-family: fontRachana;
+    font-family: Rachana-Regular;
     text-shadow: 0px 0px 2px rgb(129, 164, 187);
     font-size: 12pt;
     text-align: justify;
     width: 65%;
     margin: auto;
 }
-
