@@ -72,6 +72,8 @@ figsource {
 	font-size: 12pt;
 	text-align: left;
 	padding: 1rem;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
         hyphens: auto;
 }
 
