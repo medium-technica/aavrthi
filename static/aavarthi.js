@@ -16,7 +16,7 @@ function loadFilesList() {
 			Articles = data;
 			$.each(data, function (key, data) {
 				ListFiles.push(key);
-				$('#ListMenu').append(`<a id="article" onclick="loadFile('` + key + `')" class=" mdl-navigation__link "> <i class=" material-icons ">library_books</i>'` + key + `'</a>`);
+				$('#ListMenu').append(`<a id="article" onclick="loadFile('` + key + `')" class=" mdl-navigation__link "> <i class=" material-icons ">library_books</i>` + key + `</a>`);
 			})
 			loadFile(ListFiles[0]);
 		});
