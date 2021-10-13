@@ -9,7 +9,7 @@ function fnInit() {
 }
 
 function loadFilesList() {
-	fetch("https://abraham198305.github.io/aavarthi/static/res/doc/text.json")
+	fetch("http://e6420:7000/static/res/doc/text.json")
 		.then(response => response.json())
 		.then(data => {
 			//console.log(data);

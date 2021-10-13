@@ -1,82 +1,80 @@
 @import url('https://smc.org.in/fonts/rachana.css');
+:root {
+	--text-color: rgb(5, 50, 50);
+	--text-shadow: 0px 0px 1px #997;
+}
+
+h2, h3, .mdl-layout-title, .menu-title, .b-box_with_grand_text, .mdl-navigation__link {
+	color: var(--text-color);
+	font-family: Rachana;
+	text-shadow: var(--text-shadow);
+}
+
+.material-icons {
+	color: var(--text-color);
+	text-shadow: var(--text-shadow);
+}
+
 figure {
-    margin: auto;
+	margin: auto;
 }
 
 body {
-    background-color: wheat;
+	background-color: wheat;
 }
 
 img {
-    width: 20%;
-    box-shadow: 0px 0px 10px #045;
-    border-radius: 70%;
-    margin-bottom: 30px;
-}
-
-h2, h3 {
-    font-size: 20pt;
-    color: rgb(5, 50, 50);
-    font-family: Rachana-Bold;
-    text-shadow: 0px 0px 10px #035;
+	width: 20%;
+	box-shadow: 0px 0px 10px #045;
+	border-radius: 70%;
+	margin-bottom: 30px;
 }
 
 figcaption {
-    color: rgb(5, 50, 50);
-    font-size: 10pt;
-    padding: 2px;
-    text-align: center;
+	color: var(--text-color);
+	font-size: 10pt;
+	padding: 2px;
+	text-align: center;
 }
 
 figsource {
-    font-size: 8pt;
-    text-align: center;
+	font-size: 8pt;
+	text-align: center;
 }
 
 .demo-layout-waterfall .mdl-layout__drawer-button, .mdl-layout__header {
-    background-color: transparent;
-    color: rgb(13, 112, 158);
+	background-color: transparent;
 }
 
 .mdl-layout__drawer-button {
-    margin-left: 0px;
-    margin-top: 12px;
+	margin-left: 0px;
+	margin-top: 12px;
 }
 
 .mdl-layout__header-row {
-    margin: auto;
-    padding: 0;
-}
-
-.mdl-layout__drawer, .mdl-menu {
-    color: rgb(13, 112, 158);
-}
-
-.page-content {
-    margin-top: 10px;
+	margin: auto;
+	padding: 0;
 }
 
 .mdl-layout-title {
-    color: rgb(5, 50, 50);
-    font-family: Rachana-Bold;
-    text-shadow: 0px 0px 10px #035;
-    font-size: 20pt;
-    padding-right: 15px;
+	font-weight: bold;
+	max-width: 60vw;
+	text-align: center;
 }
 
 .menu-title {
-    color: rgb(5, 50, 50);
-    font-family: Rachana-Bold;
-    text-shadow: 0px 0px 10px #035;
-    font-size: 16pt;
+	font-weight: bold;
+	padding-top: 20px;
+	text-align: center;
 }
 
-.b-box_with_grand_text, .mdl-navigation__link {
-    color: rgb(5, 50, 50);
-    font-family: Rachana-Regular;
-    text-shadow: 0px 0px 2px rgb(129, 164, 187);
-    font-size: 12pt;
-    text-align: justify;
-    width: 65%;
-    margin: auto;
+.b-box_with_grand_text {
+	font-size: 12pt;
+	text-align: justify;
+	padding: 1rem;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+	text-align: left;
+	padding: 3px 10px;
 }
