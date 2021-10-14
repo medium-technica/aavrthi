@@ -24,6 +24,15 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 	background-color: var(--background-color)
 }
 
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+	display: block;
+	flex-shrink: 0;
+	padding: 15px 20px;
+	margin: 0;
+	text-align: center;
+	line-height: 10pt;
+}
+
 .menu-title {
 	text-align: center;
 	font-weight: bold;
