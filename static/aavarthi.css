@@ -19,7 +19,7 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 	background-color: wheat;
 }
 
-.mdl-layout-container, .mdl-layout__header .mdl-layout__drawer-button {
+.mdl-layout-container, .mdl-layout__drawer, .mdl-layout__header .mdl-layout__drawer-button {
 	background-color: transparent;
 }
 
