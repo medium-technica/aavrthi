@@ -7,10 +7,10 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <!--<link rel="shortcut icon" type="image/x-icon" href="static/res/img/yin-yang.png" />-->
- <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
- <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
- <link rel="manifest" href="static/site.webmanifest">
+ <link rel="apple-touch-icon" sizes="180x180" href="static/res/img/favicon_io/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="static/res/img/favicon_io/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="static/res/img/favicon_io/favicon-16x16.png">
+ <link rel="manifest" href="static/res/img/favicon_io/site.webmanifest">
 
  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
@@ -24,27 +24,21 @@
 </head>
 
 <body>
- <!-- List with avatar and controls -->
-
- <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--waterfall">
-
-   <!-- Top row, always visible -->
+ <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="demo-header mdl-layout__header">
    <div class="mdl-layout__header-row">
-    <!-- Title -->
-    <span id="title" class="mdl-layout-title">ആവർത്തി</span>
-
-    <div class="mdl-layout-spacer"></div>
+    <span class="mdl-layout-title">ആവർത്തി</span>
    </div>
   </header>
-  <div class="mdl-layout__drawer">
-   <span class="menu-title">ലേഖനങ്ങൾ</span>
-   <nav id="ListMenu" class="mdl-navigation">
+  <div class="demo-drawer mdl-layout__drawer">
+   <header class="demo-drawer-header">
+    <div class="menu-title">ലേഖനങ്ങൾ</div>
+   </header>
+   <nav id="ListMenu" class="demo-navigation mdl-navigation">
    </nav>
   </div>
   <main class="mdl-layout__content">
    <div class="page-content">
-    <div id="echo-file" class="b-box_with_grand_text"></div>
    </div>
   </main>
  </div>

@@ -16,7 +16,7 @@ function loadFilesList() {
 			Articles = data;
 			$.each(data, function (key, data) {
 				ListFiles.push(key);
-				$('#ListMenu').append(`<a id="article" onclick="loadFile('` + key + `')" class=" mdl-navigation__link "> <i class=" material-icons ">library_books</i>` + key + `</a>`);
+				$('#ListMenu').append(`<a onclick="loadFile('` + key + `')" class=" mdl-navigation__link ">` + key + `</a>`);
 			})
 			loadFile(ListFiles[0]);
 		});
@@ -30,5 +30,5 @@ function loadFile(nameFile, event) {
 	$('.mdl-layout__drawer').attr("class", "mdl-layout__drawer");
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
 	$('.mdl-layout-title').html(nameFile);
-	$('#echo-file').html(Articles[nameFile]);
+	$('.page-content').html(Articles[nameFile]);
 }
