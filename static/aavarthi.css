@@ -2,6 +2,7 @@
 :root {
 	--text-color: #005;
 	--text-shadow: 0px 0px 1px #997;
+	--background-color: rgb(255, 250, 235);
 }
 
 .page-content, .page-body, .mdl-layout-title, .menu-title, .page-content, .mdl-navigation__link, #ListMenu a {
@@ -16,12 +17,11 @@
 }
 
 body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__header .mdl-layout__header-row {
-	background-color: wheat;
+	background-color: var(--background-color)
 }
 
-.mdl-layout-container, .mdl-layout__drawer, .mdl-layout__header .mdl-layout__drawer-button {
-	background-color: transparent;
-	color: transparent;
+.mdl-layout-container, .mdl-layout__header .mdl-layout__drawer-button {
+	background-color: var(--background-color)
 }
 
 .menu-title {
