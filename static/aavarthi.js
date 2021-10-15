@@ -23,10 +23,11 @@ function loadFilesList() {
 }
 
 function loadFile(nameFile, event) {
+	$('.page-content').scrollTop = 0;
 	if (event) {
 		event.preventDefault();
 	}
-	console.log(nameFile);
+	//console.log(nameFile);
 	$('.mdl-layout__drawer').attr("class", "mdl-layout__drawer");
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
 	$('.mdl-layout-title').html(nameFile);
