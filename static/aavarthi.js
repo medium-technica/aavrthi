@@ -9,6 +9,7 @@ function fnInit() {
 }
 
 function loadFilesList() {
+	var i = 0;
 	fetch("static/res/doc/text.json")
 		.then(response => response.json())
 		.then(data => {
@@ -16,14 +17,24 @@ function loadFilesList() {
 			Articles = data;
 			$.each(data, function (key, data) {
 				ListFiles.push(key);
-				$('#ListMenu').append(`<a onclick="loadFile('` + key + `')" class=" mdl-navigation__link ">` + key + `</a>`);
+				$('#ListMenu').append(`<a onclick="loadFile('` + key + `',` + i + `)" class=" mdl-navigation__link ">` + key + `</a>`);
+				//$('#ListMenu').append(`<a href="?a=` + i + `" class=" mdl-navigation__link ">` + key + `</a>`);
+				i++;
 			})
-			loadFile(ListFiles[0]);
+			const urlSearchParams = new URLSearchParams(window.location.search);
+			const params = Object.fromEntries(urlSearchParams.entries());
+			indexFile = parseInt(params["a"]);
+			//console.log(indexFile);
+			if (indexFile >= 0 && ListFiles.length > 0) {
+				//console.log(ListFiles[indexFile]);
+				loadFile(ListFiles[indexFile], indexFile);
+			} else {
+				loadFile(ListFiles[0], 0);
+			}
 		});
 }
 
-function loadFile(nameFile, event) {
-	$('.page-content').scrollTop = 0;
+function loadFile(nameFile, i, event) {
 	if (event) {
 		event.preventDefault();
 	}
@@ -32,4 +43,14 @@ function loadFile(nameFile, event) {
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
 	$('.mdl-layout-title').html(nameFile);
 	$('.page-content').html(Articles[nameFile]);
+	history.pushState({}, null, "/?a=" + i);
+	$(document).scrollTop($(document).height());
+}
+
+function wait(ms) {
+	var start = new Date().getTime();
+	var end = start;
+	while (end < start + ms) {
+		end = new Date().getTime();
+	}
 }
