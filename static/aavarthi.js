@@ -43,7 +43,7 @@ function loadFile(nameFile, i, event) {
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
 	$('.mdl-layout-title').html(nameFile);
 	$('.page-content').html(Articles[nameFile]);
-	history.pushState({}, null, "/?a=" + i);
+	history.pushState({}, null, "/aavarthi?a=" + i);
 	$(document).scrollTop($(document).height());
 }
 
