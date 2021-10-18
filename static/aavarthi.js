@@ -17,7 +17,7 @@ function loadFilesList() {
 			Articles = data;
 			$.each(data, function (key, data) {
 				ListFiles.push(key);
-				$('#ListMenu').append(`<a onclick="loadFile('` + key + `',` + i + `)" class=" mdl-navigation__link ">` + key + `</a>`);
+				$('#ListMenu').append(`<a href="#top" onclick="loadFile('` + key + `',` + i + `)" class=" mdl-navigation__link ">` + key + `</a>`);
 				//$('#ListMenu').append(`<a href="?a=` + i + `" class=" mdl-navigation__link ">` + key + `</a>`);
 				i++;
 			})
@@ -36,21 +36,12 @@ function loadFilesList() {
 
 function loadFile(nameFile, i, event) {
 	if (event) {
-		event.preventDefault();
+		//event.preventDefault();
 	}
 	//console.log(nameFile);
 	$('.mdl-layout__drawer').attr("class", "mdl-layout__drawer");
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
 	$('.mdl-layout-title').html(nameFile);
 	$('.page-content').html(Articles[nameFile]);
-	history.pushState({}, null, "/aavarthi?a=" + i);
-	$(document).scrollTop($(document).height());
-}
-
-function wait(ms) {
-	var start = new Date().getTime();
-	var end = start;
-	while (end < start + ms) {
-		end = new Date().getTime();
-	}
+	history.pushState({}, null, "/aavarthi/?a=" + i);
 }
