@@ -45,7 +45,6 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 
 .mdl-layout-title {
 	margin: auto;
-	font: size 12px;
 	font-weight: bold;
 	padding-top: 7px;
 	width: 70vw;
@@ -53,7 +52,6 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 }
 
 .page-content {
-	font-size: 12pt;
 	margin: auto;
 	text-align: center;
 	padding: 1rem 1rem 0 1rem;
