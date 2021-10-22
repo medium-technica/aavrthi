@@ -36,7 +36,7 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 }
 
 .mdl-layout__header-row {
-	padding: 0;
+	padding-left: 0;
 }
 
 .mdl-layout-title {
@@ -54,6 +54,11 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
+}
+
+.mdl-paging {
+	display: flex;
+	justify-content: center;
 }
 
 @media only screen and (min-width: 800px) {

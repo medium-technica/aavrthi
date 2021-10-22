@@ -2,6 +2,7 @@ $(fnInit())
 
 var ListFiles = [];
 var Articles;
+var indexFile;
 
 function fnInit() {
 	console.log("init");
@@ -34,6 +35,26 @@ function loadFilesList() {
 		});
 }
 
+function loadPrev() {
+	console.log("Prev");
+	if (indexFile > 0)
+		indexFile--;
+	if (ListFiles.length > 0) {
+		//console.log(ListFiles[indexFile]);
+		loadFile(ListFiles[indexFile], indexFile);
+	}
+}
+
+function loadNext() {
+	console.log("Next");
+	if (indexFile < ListFiles.length - 1)
+		indexFile++;
+	if (ListFiles.length > 0) {
+		//console.log(ListFiles[indexFile]);
+		loadFile(ListFiles[indexFile], indexFile);
+	}
+}
+
 function loadFile(nameFile, i, event) {
 	if (event) {
 		//event.preventDefault();
@@ -45,4 +66,14 @@ function loadFile(nameFile, i, event) {
 	$('title').html(nameFile);
 	$('.page-content').html(Articles[nameFile]);
 	history.pushState({}, null, "/aavarthi/?a=" + i);
+	if (indexFile == 0) {
+		$('.mdl-paging__prev').prop("hidden", true);
+	} else {
+		$('.mdl-paging__prev').prop("hidden", false);
+	}
+	if (indexFile == ListFiles.length - 1) {
+		$('.mdl-paging__next').prop("hidden", true);
+	} else {
+		$('.mdl-paging__next').prop("hidden", false);
+	}
 }
