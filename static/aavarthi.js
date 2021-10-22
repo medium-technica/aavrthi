@@ -61,7 +61,7 @@ function loadNext() {
 
 function loadFile(nameFile, index, event) {
 	if (event) {
-		event.preventDefault();
+		//updateevent.preventDefault();
 	}
 	console.log(nameFile, index);
 	$('.mdl-layout__drawer').attr("class", "mdl-layout__drawer");
