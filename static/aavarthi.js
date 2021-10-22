@@ -42,6 +42,7 @@ function loadFile(nameFile, i, event) {
 	$('.mdl-layout__drawer').attr("class", "mdl-layout__drawer");
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
 	$('.mdl-layout-title').html(nameFile);
+	$('title').html(nameFile);
 	$('.page-content').html(Articles[nameFile]);
 	history.pushState({}, null, "/aavarthi/?a=" + i);
 }
