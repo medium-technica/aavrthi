@@ -63,7 +63,7 @@ function loadFile(nameFile, index, event) {
 	if (event) {
 		updateevent.preventDefault();
 	}
-	console.log(nameFile, index);
+	console.log(nameFile, index, ListFiles.length);
 	$('.mdl-layout__drawer').attr("class", "mdl-layout__drawer");
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
 	$('.mdl-layout-title').html(nameFile);
@@ -71,13 +71,13 @@ function loadFile(nameFile, index, event) {
 	$('.page-content').html(Articles[nameFile]);
 	history.pushState({}, null, "/aavarthi/?a=" + index);
 	if (index == 0) {
-		$('.mdl-paging__prev').hide();
+		$('.mdl-paging__prev').css("visibility", "hidden");
 	} else {
-		$('.mdl-paging__prev').show();
+		$('.mdl-paging__prev').css("visibility", "visible");
 	}
 	if (index == ListFiles.length - 1) {
-		$('.mdl-paging__next').hide();
+		$('.mdl-paging__next').css("visibility", "hidden");
 	} else {
-		$('.mdl-paging__next').show();
+		$('.mdl-paging__next').css("visibility", "visible");
 	}
 }

@@ -38,26 +38,45 @@
    </nav>
   </div>
   <main class="mdl-layout__content">
-   <div id="top" class="page-content">
+   <div id="top" class="page-body">
+    <div class='mdl-paging'>
+     <a href="#top" onclick="loadPrev()" class=" mdl-navigation__link mdl-paging__prev">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+       <span class="mdl-paging__prev">
+        <i class="material-icons">keyboard_arrow_left</i>
+       </span>
+      </button>
+     </a>
+     <span id="spacer-horizontal-pagination-leftright"></span>
+     <a href="#top" onclick="loadNext()" class=" mdl-navigation__link mdl-paging__next">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+       <span>
+        <i class="material-icons">keyboard_arrow_right</i>
+       </span>
+      </button>
+     </a>
+    </div>
+    <div class="page-content">
+    </div>
+    <div class='mdl-paging'>
+     <a href="#top" onclick="loadPrev()" class=" mdl-navigation__link mdl-paging__prev">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+       <span class="mdl-paging__prev">
+        <i class="material-icons">keyboard_arrow_left</i>
+       </span>
+      </button>
+     </a>
+     <span id="spacer-horizontal-pagination-leftright"></span>
+     <a href="#top" onclick="loadNext()" class=" mdl-navigation__link mdl-paging__next">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+       <span>
+        <i class="material-icons">keyboard_arrow_right</i>
+       </span>
+      </button>
+     </a>
+    </div>
    </div>
-   <!--         pager -->
-   <div class='mdl-paging'>
-    <a href="#top" onclick="loadPrev()" class=" mdl-navigation__link ">
-     <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-      <span mdl-paging__prev">
-       <i class="material-icons">keyboard_arrow_left</i>
-      </span>
-     </button>
-    </a>
-    <span id="spacer-paging"></span>
-    <a href="#top" onclick="loadNext()" class=" mdl-navigation__link ">
-     <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-      <span mdl-paging__next">
-       <i class="material-icons">keyboard_arrow_right</i>
-      </span>
-     </button>
-    </a>
-   </div>
+
   </main>
  </div>
 </body>

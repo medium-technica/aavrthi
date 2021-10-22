@@ -55,32 +55,37 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 	text-align: center;
 }
 
+.page-body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
 .page-content {
 	margin: auto;
 	text-align: center;
-	padding: 1rem 1rem 0 1rem;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
+	padding: 0 1rem 0rem 1rem;
 }
 
 .mdl-paging {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
-#spacer-paging {
-	width: 15vw;
+#spacer-horizontal-pagination-leftright {
+	width: 60vw;
 }
 
 @media only screen and (min-width: 800px) {
 	.page-content {
-		padding: 1rem 10rem 0 10rem;
+		padding: 0 10rem 0 10rem;
 	}
 }
 
 @media only screen and (min-width: 1500px) {
 	.page-content {
-		padding: 1rem 20rem 0 20rem;
+		padding: 0 20rem 0 20rem;
 	}
 }
