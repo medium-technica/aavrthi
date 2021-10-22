@@ -35,8 +35,8 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 	padding-top: 20px;
 }
 
-.mdl-layout__header-row {
-	padding-left: 0;
+.mdl-layout--fixed-drawer>.mdl-layout__header .mdl-layout__header-row {
+	padding: 0px 0px 0px 0px;
 }
 
 .mdl-layout-title {
@@ -57,8 +57,8 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 }
 
 .mdl-paging {
-	display: flex;
-	justify-content: center;
+	margin: auto;
+	width: max-content;
 }
 
 @media only screen and (min-width: 800px) {
