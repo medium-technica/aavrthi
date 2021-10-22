@@ -42,14 +42,21 @@
    </div>
    <!--         pager -->
    <div class='mdl-paging'>
-    <button onclick=loadPrev()
-     class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-paging__prev"><i
-      class="material-icons">keyboard_arrow_left</i>
-    </button>
-    <button onclick=loadNext()
-     class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-paging__next"><i
-      class="material-icons">keyboard_arrow_right</i>
-    </button>
+    <a href="#top" onclick="loadPrev()" class=" mdl-navigation__link ">
+     <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+      <span mdl-paging__prev">
+       <i class="material-icons">keyboard_arrow_left</i>
+      </span>
+     </button>
+    </a>
+    <span id="spacer-paging"></span>
+    <a href="#top" onclick="loadNext()" class=" mdl-navigation__link ">
+     <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+      <span mdl-paging__next">
+       <i class="material-icons">keyboard_arrow_right</i>
+      </span>
+     </button>
+    </a>
    </div>
   </main>
  </div>
