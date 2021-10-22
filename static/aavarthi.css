@@ -6,7 +6,7 @@
 	--background-color-dark: rgb(250, 240, 220);
 }
 
-.page-content, .mdl-layout-title, .menu-title, .mdl-navigation__link {
+.page-content, .mdl-layout-title, .menu-title, .mdl-navigation__link, .page-title, .title-description {
 	color: var(--text-color);
 	font-family: Rachana;
 	text-shadow: var(--text-shadow);
@@ -52,6 +52,17 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 	font-weight: bold;
 	padding-top: 7px;
 	width: 70vw;
+	text-align: center;
+}
+
+.title-description {
+	font-weight: lighter;
+	font-size: small;
+}
+
+.page-title {
+	font-weight: bold;
+	font-size: 1.3em;
 	text-align: center;
 }
 

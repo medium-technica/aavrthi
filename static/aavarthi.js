@@ -66,8 +66,9 @@ function loadFile(nameFile, index, event) {
 	console.log(nameFile, index, ListFiles.length);
 	$('.mdl-layout__drawer').attr("class", "mdl-layout__drawer");
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
-	$('.mdl-layout-title').html(nameFile);
-	$('title').html(nameFile);
+	//$('.mdl-layout-title').html(nameFile);
+	//$('title').html(nameFile);
+	$('.page-title').html(nameFile);
 	$('.page-content').html(Articles[nameFile]);
 	history.pushState({}, null, "/aavarthi/?a=" + index);
 	if (index == 0) {
