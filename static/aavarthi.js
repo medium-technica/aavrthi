@@ -69,7 +69,7 @@ function loadFile(nameFile, index, event) {
 	//$('.mdl-layout-title').html(nameFile);
 	//$('title').html(nameFile);
 	$('.page-title').html(nameFile);
-	$('.page-content').html(Articles[nameFile]);
+	$('.page-content').html(`<i id='top'></i>`+Articles[nameFile]);
 	history.pushState({}, null, "/aavarthi/?a=" + index);
 	if (index == 0) {
 		$('.mdl-paging__prev').css("visibility", "hidden");
