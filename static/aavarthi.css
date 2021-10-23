@@ -60,10 +60,9 @@ body, .mdl-layout--fixed-drawer, .mdl-layout__drawer, .mdl-menu, .mdl-layout__he
 	font-size: small;
 }
 
-span.page-title {
+.page-title {
 	font-weight: bold;
 	font-size: 1.3em;
-	text-align: center;
 }
 
 .page-body {
@@ -88,6 +87,7 @@ span.page-title {
 }
 
 #spacer-horizontal-pagination-leftright {
+	text-align: center;
 	width: 60vw;
 }
 

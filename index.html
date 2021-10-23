@@ -40,21 +40,27 @@
   <main class="mdl-layout__content">
    <div class="page-body">
     <div class='mdl-paging'>
-     <a href="#top" onclick="loadPrev()" class=" mdl-navigation__link mdl-paging__prev">
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-       <span class="mdl-paging__prev">
-        <i class="material-icons">keyboard_arrow_left</i>
-       </span>
-      </button>
-     </a>
-     <span id="spacer-horizontal-pagination-leftright" class="page-title mdl-cell"></span>
-     <a href="#top" onclick="loadNext()" class=" mdl-navigation__link mdl-paging__next">
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-       <span>
-        <i class="material-icons">keyboard_arrow_right</i>
-       </span>
-      </button>
-     </a>
+     <table>
+      <td>
+       <a href="#top" onclick="loadPrev()" class="mdl-paging__prev">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+         <span class="mdl-paging__prev">
+          <i class="material-icons">keyboard_arrow_left</i>
+         </span>
+        </button>
+       </a>
+      </td>
+      <td id="spacer-horizontal-pagination-leftright"><span class="page-title"></span></td>
+      <td>
+       <a href="#top" onclick="loadNext()" class=" mdl-navigation__link mdl-paging__next">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+         <span>
+          <i class="material-icons">keyboard_arrow_right</i>
+         </span>
+        </button>
+       </a>
+      </td>
+     </table>
     </div>
     <div class="page-content">
     </div>
