@@ -1,6 +1,7 @@
 $(fnInit())
 
 var ListFiles = [];
+var ListTitleFiles = [];
 var Articles;
 
 function fnInit() {
@@ -14,21 +15,24 @@ function loadFilesList() {
 		.then(data => {
 			//console.log(data);
 			Articles = data;
-			i = 0;
-			$.each(data, function (key, data) {
-				ListFiles.push(key);
-				$('#ListMenu').append(`<a href="#top" onclick="loadFile('` + key + `',` + i + `)" class=" mdl-navigation__link ">` + key + `</a>`);
-				i++;
+			indexArray = 0;
+			$.each(data, function (key, value) {
+				ListTitleFiles.push(key);
+				$('#ListMenu').append(`<a href="#top" onclick="loadFile('` + key + `',` + indexArray + `)" class=" mdl-navigation__link ">` + key + `</a>`);
+				indexArray++;
+				ListFiles.push(value);
 			})
 			const urlSearchParams = new URLSearchParams(window.location.search);
 			const params = Object.fromEntries(urlSearchParams.entries());
-			indexFile = parseInt(params["a"]);
-			//console.log(indexFile);
+			titleFileURL = params["t"];
+			//console.log(Articles[titleFileURL]);
+			indexFile = Object.keys(Articles).indexOf(titleFileURL);
+			console.log("index from Name:" + indexFile);
 			if (indexFile >= 0 && ListFiles.length > 0) {
 				//console.log(ListFiles[indexFile]);
-				loadFile(ListFiles[indexFile], indexFile);
+				loadFile(ListTitleFiles[indexFile], indexFile);
 			} else {
-				loadFile(ListFiles[0], 0);
+				loadFile(ListTitleFiles[0], 0);
 			}
 		});
 }
@@ -37,12 +41,14 @@ function loadPrev() {
 	console.log("Prev");
 	const urlSearchParams = new URLSearchParams(window.location.search);
 	const params = Object.fromEntries(urlSearchParams.entries());
-	indexFile = parseInt(params["a"]);
+	titleFileURL = params["t"];
+	//console.log(Articles[titleFileURL]);
+	indexFile = Object.keys(Articles).indexOf(titleFileURL);
 	if (indexFile > 0)
 		indexFile--;
-	if (ListFiles.length > 0) {
+	if (ListTitleFiles.length > 0) {
 		//console.log(ListFiles[indexFile]);
-		loadFile(ListFiles[indexFile], indexFile);
+		loadFile(ListTitleFiles[indexFile], indexFile);
 	}
 }
 
@@ -50,27 +56,27 @@ function loadNext() {
 	console.log("Next");
 	const urlSearchParams = new URLSearchParams(window.location.search);
 	const params = Object.fromEntries(urlSearchParams.entries());
-	indexFile = parseInt(params["a"]);
+	titleFileURL = params["t"];
+	//console.log(Articles[titleFileURL]);
+	indexFile = Object.keys(Articles).indexOf(titleFileURL);
 	if (indexFile < ListFiles.length - 1)
 		indexFile++;
-	if (ListFiles.length > 0) {
+	if (ListTitleFiles.length > 0) {
 		//console.log(ListFiles[indexFile]);
-		loadFile(ListFiles[indexFile], indexFile);
+		loadFile(ListTitleFiles[indexFile], indexFile);
 	}
 }
 
-function loadFile(nameFile, index, event) {
+function loadFile(titleFile, index, event) {
 	if (event) {
 		updateevent.preventDefault();
 	}
-	console.log(nameFile, index, ListFiles.length);
+	//console.log(titleFile, index, ListFiles.length);
 	$('.mdl-layout__drawer').attr("class", "mdl-layout__drawer");
 	$('.mdl-layout__obfuscator').attr("class", "mdl-layout__obfuscator");
-	//$('.mdl-layout-title').html(nameFile);
-	//$('title').html(nameFile);
-	$('.page-title').html(nameFile);
-	$('.page-content').html(`<i id='top'></i>` + Articles[nameFile]);
-	history.pushState({}, null, "/aavarthi/?a=" + index);
+	$('.page-title').html(titleFile);
+	$('.page-content').html(`<i id='top'></i>` + Articles[titleFile]);
+	history.pushState({}, null, "/aavarthi/?t=" + titleFile);
 	if (index == 0) {
 		$('.mdl-paging__prev').css("visibility", "hidden");
 	} else {
