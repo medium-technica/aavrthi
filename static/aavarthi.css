@@ -98,6 +98,13 @@ body,
  font-size: 1.3em;
 }
 
+.page-content table,
+.page-content th,
+.page-content td {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+
 .page-body {
  display: flex;
  flex-direction: column;
