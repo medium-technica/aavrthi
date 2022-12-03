@@ -84,8 +84,13 @@ body,
  margin: auto;
  font-weight: bold;
  padding-top: 7px;
- width: 70vw;
+ width: 100%;
  text-align: center;
+}
+
+#more-button {
+ position: fixed;
+ right:0;
 }
 
 .title-description {
