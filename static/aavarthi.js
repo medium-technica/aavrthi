@@ -76,7 +76,9 @@ function loadFile(titleFile, index, event) {
  $('.page-title').html(titleFile);
  $('.page-content').html(`<i id='top'></i><br>` + Articles[titleFile] + `<br><br>`);
  document.querySelector('meta[property="og:title"]').setAttribute("content", titleFile);
+ document.querySelector('meta[property="og:url"]').setAttribute("content", "https://medium-technica.github.io/aavarthi/?t=" + titleFile);
  console.log(document.querySelector('meta[property="og:title"]').getAttribute("content"));
+ console.log(window.location.href);
  history.pushState({}, null, window.location.pathname + "?t=" + encodeURIComponent(titleFile));
  if (index == 0) {
   $('.mdl-paging__prev').css("visibility", "hidden");
