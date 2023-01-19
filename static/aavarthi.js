@@ -84,8 +84,9 @@ function loadFile(titleFile, index, event) {
  document.querySelector('meta[property="og:url"]').setAttribute("content", decodeURIComponent((window.location.href).replace(/%20/g, "_")));
  if (index == 0) {
   $('.mdl-paging__prev').css("visibility", "hidden");
- } else {
   document.querySelector('meta[property="og:description"]').setAttribute("content", "ആവർത്തനങ്ങളുടെ സ്മൃതികൾ");
+ } else {
+  document.querySelector('meta[property="og:description"]').setAttribute("content", (Articles[titleFile]).substring(0, 100) + "...");
   $('.mdl-paging__prev').css("visibility", "visible");
  }
  if (index == ListFiles.length - 1) {
