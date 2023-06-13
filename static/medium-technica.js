@@ -1,5 +1,6 @@
 $(fnInit())
 
+var Title;
 var ListFiles = [];
 var ListTitleFiles = [];
 var Articles;
@@ -7,8 +8,27 @@ var Description;
 
 function fnInit() {
  console.log("init");
- fnLoadData();
+ fnLoadInit();
+ //fnLoadData();
 }
+
+function fnLoadInit() {
+ fetch("static/init.json")
+  .then(response => response.json())
+  .then(data => {
+   console.log(data["description"]);
+   Title = data["title"];
+   Description = data["description"];
+   document.querySelector("title").innerHTML = Title;
+   document.querySelector(".mdl-layout-title").innerHTML = Title + '<div class="title-description">' + Description + '</div>';
+   document.querySelector("#menu-item-right").innerHTML = data["title-menu-right"];
+   document.querySelector("#menu-item-left").innerHTML = data["title-menu-left"];
+   document.querySelector('meta[property="og:title"]').setAttribute("content", Title);
+   document.querySelector('meta[property="og:description"]').setAttribute("content", Description);
+   fnLoadData();
+  });
+}
+
 function fnLoadData() {
  fetch("static/res/doc/text.json")
   .then(response => response.json())

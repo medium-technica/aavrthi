@@ -2,11 +2,11 @@
 <html>
 
 <head>
- <title>ആവർത്തി</title>
- <meta property="og:url" content="https://medium-technica.github.io/aavarthi" />
+ <title></title>
+ <meta property="og:url" content="https://medium-technica.github.io" />
  <meta property="og:type" content="article" />
- <meta property="og:title" content="ആവർത്തി" />
- <meta property="og:description" content="ആവൎത്തനങ്ങളുടെ സ്മൃതികൾ" />
+ <meta property="og:title" content="" />
+ <meta property="og:description" content="" />
  <meta property="og:image" content="static/res/img/favicon_io/android-chrome-512x512.png" />
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,16 +22,18 @@
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
-  <link href="static/medium-technica.css" rel="stylesheet" media="all" type="text/css">
-  <script src="static/medium-technica.js"></script>
+ <link href="https://medium-technica.github.io/static/medium-technica.css" rel="stylesheet" media="all" type="text/css">
+ <script src="https://medium-technica.github.io/static/medium-technica.js"></script>
 
 </head>
 
-<body style="font-family: 'Rachana'">
+<body>
  <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
   <header class="demo-header mdl-layout__header">
    <div class="mdl-layout__header-row">
-    <div style="font-family: 'Rachana'" class="mdl-layout-title">ആവർത്തി<div class="title-description">ആവൎത്തനങ്ങളുടെ സ്മൃതികൾ</div>
+    <div class="mdl-layout-title">
+     <div class="title-description">
+     </div>
     </div>
     <button
      class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-layout--overlay-drawer-button"
@@ -39,13 +41,13 @@
      <i class="material-icons">more_vert</i>
     </button>
     <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-     <li class="mdl-menu__item" onclick="location.href='https://medium-technica.github.io/abraham';"
-      value="About the Writer">രചയിതാവിനെ കുറിച്ച്</li>
+     <li id="menu-item-right" class="mdl-menu__item"
+      onclick="location.href='https://medium-technica.github.io/abraham';" value="About the Writer"></li>
     </ul>
   </header>
   <div class="demo-drawer mdl-layout__drawer">
    <header class="demo-drawer-header">
-    <div class="menu-title">ലേഖനങ്ങൾ</div>
+    <div id="menu-item-left" class="menu-title"></div>
    </header>
    <nav id="ListMenu" class="demo-navigation mdl-navigation">
    </nav>
