@@ -2,6 +2,7 @@
  "editor.fontFamily": "Rachana",
  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
  "editor.tabSize": 1,
- "editor.fontSize": 12,
- "editor.wordWrap": "bounded"
+ "editor.fontSize": 14,
+ "editor.wordWrap": "bounded",
+ "editor.wordWrapColumn": 80
 }
