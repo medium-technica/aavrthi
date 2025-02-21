@@ -54,8 +54,10 @@
             "Fear of surveillance",
             "Fear of social evaluation",
             "Fear of identity theft or exploitation",
-            "Fear of Privacy anxiety",
-            "Fear of online privacy"
+            "Fear of privacy hindrance",
+            "Fear of online privacy hindrance",
+            "Fear of reading words related to fear, anxiety, worry, warnings, cautions, etc...",
+            "Fear of sensing anything related to fear"
         ]
     }
 }
