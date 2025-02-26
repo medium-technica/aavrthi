@@ -3,7 +3,7 @@
     "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.indentSize": "tabSize",
     "editor.tabSize": 4,
-    "editor.fontSize": 21,
+    "editor.fontSize": 14,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80
 }
