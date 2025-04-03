@@ -59,5 +59,23 @@
             "Fear of reading words related to fear, anxiety, worry, warnings, cautions, etc...",
             "Fear of sensing anything related to fear"
         ]
-    }
+    },
+    "2025-03-26 08:41":[
+        {
+            "Q":"Briefly outline your professional plans and career objectives in your own words(in about 500words), explaining and substantiating why you want to do this program and what you expect to get from it.",
+            "A":"I plan to establish a sustainable closed loop system for collection, transport, segregation and recycling of all kinds of wastes in my locality. Currently, I am unable to prepare a business development proposal / model because I don't have the necessary clarity about all the related long term processes & risks involved. I expect this program to clear all my uncertainities related to the preparation of a business model."
+        },
+        {
+            "Q":"Describe briefly your current or most recent job responsibilities. State the knowledge and skills you have acquired from this experience.",
+            "A":"Currenlty I am unemployed. My last job was on 6 months contract as Software Developer. I was responsible for the development, testing & maintenance of a computer software which does the automated generation of documents containing reports in MS Excel Sheet format & upload them to a internet (cloud) based storage. I have aquired additional computer programming skills related to Javascript language & libraries for generating documents in Microsoft Excel format and for storage in Google's internet cloud based storage named Google Drive."
+        },
+        {
+            "Q":"Describe your strengths and areas of improvement.",
+            "A":"I have deep critical and analytical thinking skills which helps me a lot in problem solving. I need to improve on controlling my anxiety because of excessive thinking. I find faults in almost everything I involve & try to address it even if it is relatively insignificant."
+        },
+        {
+            "Q":"What is your most significant accomplishment so far?",
+            "A":"I practice Yoga and Meditation. The control & balance I achieved both with my body & mind in handling my daily life routines is my most significant accomplishment so far."
+        }
+    ]
 }
