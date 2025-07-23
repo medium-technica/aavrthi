@@ -1,7 +1,8 @@
 {
- "title": "ആവൃത്തി",
- "description": "ആവർത്തനങ്ങളുടെ സ്മൃതികൾ",
- "title-menu-right": "രചയിതാവിനെ കുറിച്ച്",
- "title-menu-left": "ലേഖനങ്ങൾ",
- "body-style-font-family": "Rachana"
+    "language": "malayalam",
+    "title": "ആവൃത്തി",
+    "description": "ആവർത്തനങ്ങളുടെ സ്മൃതികൾ",
+    "title-menu-right": "രചയിതാവിനെ കുറിച്ച്",
+    "title-menu-left": "ലേഖനങ്ങൾ",
+    "body-style-font-family": "Rachana"
 }
